@@ -1,0 +1,62 @@
+body {
+  background-color: aqua;
+}
+
+#navbar {
+  position: fixed;
+}
+
+nav .button {
+      border: 0;
+      background: #eb974e;
+      -webkit-box-shadow: 0;
+      -moz-box-shadow: 0;
+      box-shadow: 0;
+      font-size: 0.75em;
+      color: rgba(255, 255, 255, 0.8);
+      text-transform: uppercase;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      -webkit-box-shadow: 0px 4px 0px #a74d46;
+      -moz-box-shadow: 0px 4px 0px #a74d46;
+      box-shadow: 0px 4px 0px #a74d46;
+    }
+    nav .button:hover {
+      background: #e88a37;
+      color: white;
+    }
+    nav .button:active {
+      -webkit-box-shadow: 0px 4px 0px #a74d46;
+      -moz-box-shadow: 0px 4px 0px #a74d46;
+      box-shadow: 0px 4px 0px #a74d46;
+      background: #e78129;
+    }
+SCSS
+@import "compass/css3";
+
+// Navigation Bar with Dropdown
+$button-bg: #eb974e;
+nav {
+  h2 {
+    font-weight: 300;
+    color: #5c6d7e;
+  }
+  .button {
+    border:0;
+    background: $button-bg;
+    @include box-shadow(0);
+    font-size: emCalc(12px);
+    color: rgba(255,255,255,.8);
+    text-transform: uppercase;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    @include box-shadow(0px 4px 0px #a74d46);
+    &:hover {
+      background: darken($button-bg,5%);
+      color: rgba(255,255,255,1);
+    }
+    &:active {
+      @include box-shadow(0px 4px 0px #a74d46);
+      background: darken($button-bg,8%);
+    }
+  }
