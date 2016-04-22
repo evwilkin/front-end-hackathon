@@ -18,25 +18,28 @@
     <div id="menu">
       <ul class="medium-vertical menu">
         <li data-menuanchor="home">
-          <a class="button" href="#home">Home</a>
+          <a class="expanded button" href="#home">Home</a>
         </li>
         <li data-menuanchor="florence">
-          <a class="button" href="#florence">Florence</a>
+          <a class="secondary expanded button" href="#florence">Florence</a>
         </li>
         <li data-menuanchor="venice">
-          <a class="button" href="#venice">Venice</a>
+          <a class="secondary expanded button" href="#venice">Venice</a>
         </li>
         <li data-menuanchor="santorini">
-          <a class="button" href="#santorini">Santorini</a>
+          <a class="secondary expanded button" href="#santorini">Santorini</a>
         </li>
         <li data-menuanchor="athens">
-          <a class="button" href="#athens">Athens</a>
+          <a class="secondary expanded button" href="#athens">Athens</a>
         </li>
         <li data-menuanchor="reykjavik">
-          <a class="button" href="#reykjavik">Reykjavik</a>
+          <a class="secondary expanded button" href="#reykjavik">Reykjavik</a>
         </li>
         <li data-menuanchor="iceland">
-          <a class="button" href="#iceland">Iceland Southern Coast</a>
+          <a class="secondary expanded button" href="#iceland">Iceland Southern Coast</a>
+        </li>
+        <li data-menuanchor="about">
+          <a class="secondary expanded button" href="#about">About</a>
         </li>
       </ul>
     </div>
@@ -52,7 +55,7 @@
       
       <div id="bg_container" class="content">
         <div id="videoTitle">
-          <h1>Erin and Erin's Honeymoon</h1>
+          <h1>Evan and Erin's Honeymoon</h1>
         </div>
         <video loop muted autoplay id="bg" class="fullscreen-bg__video">
           <source src="https://dl.dropboxusercontent.com/u/19725661/SantoriniSunset.mp4" type="video/mp4">
@@ -202,7 +205,7 @@
     <div id='section4' class="section">
       <div class='slide titleSlide' id="titleSlideSantorini">
         <div class="gradient">
-          <h2 id="santoriniText">Santorini</p>
+          <h2 id="santoriniText">Santorini</h2>
         </div>
       </div>
       <div class='slide'>
@@ -526,16 +529,20 @@
     </div>
 
     <!-- Page 8 - End -->
-    <!-- <div id='section8' class="section">
-      <h2>End</h2>
+    <div id='section8' class="section">
+      <div class="gradient">  
+        <h2 id="aboutText">About</h2>
+        <p>Erin and I were married in August 2016, and pursuing our love of travel we planned an extended Honeymoon abroad in Europe where we had been separately but never together.</p>
+        <p>This site was built as both a way to share some of our memories with friends and family, and also as a chance to learn and use fullPage.js, Foundation and HTML video.  It was completed in one day as a Hackathon project, though I look forward to using it as a project to continue to grow and learn from.</p>
+        <p>Source code:  <a href="https://github.com/evwilkin/front-end-hackathon">GitHub</a></p>
+        <p>Portfolio:  <a href="http://evan-wilkinson.com">Evan Wilkinson</a></p>
+      </div>
     </div>
-    <div id="footer">
-      <button>Back to Top</button>
-    </div> -->
 
   <div>
 <script src="https://code.jquery.com/jquery.js"></script>
 <script src="https://cdn.jsdelivr.net/foundation/6.2.0/foundation.min.js"></script>
+<script type="text/javascript" src="js/jquery.slimscroll.min.js"></script>
 <script type="text/javascript" src="js/jquery.fullPage.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
