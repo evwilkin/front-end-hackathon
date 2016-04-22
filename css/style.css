@@ -2,13 +2,17 @@ body {
   background-color: #34393B;
 }
 
-/*#navbar {
-  position: fixed;
-  height: 80px;
-  display: block;
-  width: 100%;
-  z-index: 10;
-}*/
+#showMenu {
+  cursor: pointer;
+}
+
+#menu {
+  display: none;
+}
+
+.menu li {
+  width: 13%;
+}
 
 div.section {
   text-align: center;
