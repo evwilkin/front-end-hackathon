@@ -14,7 +14,7 @@ body {
   font-size: 4em;
 }
 
-div.section {
+.section {
   text-align: center;
 }
 
@@ -123,6 +123,7 @@ img.portrait {
 
 #section8 {
   background-image: url("../images/411-Exposure.JPG");
+  background-size: cover;
 }
 
 #florenceText {
