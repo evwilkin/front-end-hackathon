@@ -56,9 +56,36 @@
         <div id="videoTitle">
           <h1>Evan and Erin's Honeymoon</h1>
         </div>
-        <video loop muted autoplay id="bg" class="fullscreen-bg__video">
-          <source src="https://dl.dropboxusercontent.com/u/19725661/SantoriniSunset.mp4" type="video/mp4">
-        </video>
+        <div class="video-background">
+          <div class="video-foreground">
+           <div id="muteYouTubeVideoPlayer"></div>
+            <script async src="https://www.youtube.com/iframe_api"></script>
+            <script>
+              function onYouTubeIframeAPIReady() {
+                var player;
+                player = new YT.Player('muteYouTubeVideoPlayer', {
+                  videoId: 'I4UC70KXj3M',
+                  list: 'I4UC70KXj3M', // YouTube Video ID
+                  playerVars: {
+                    autoplay: 1, 
+                    controls: 0,
+                    loop: 1,
+                  },
+                  events: {
+                    onReady: function(e) {
+                      e.target.mute();
+                    },
+                    onStateChange: function(e){
+                      if (e.data === YT.PlayerState.ENDED) {
+                          player.playVideo(); 
+                      }
+                    }
+                  }
+                });
+              }
+            </script>
+          </div>
+        </div>
       </div>
     </div>
 
